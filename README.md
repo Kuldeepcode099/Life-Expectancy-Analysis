@@ -1,45 +1,65 @@
-Project 1: Cybersecurity – Suspicious Web Threat Interactions
+Overview
 
-This project focuses on analyzing AWS CloudWatch web traffic logs to detect suspicious or malicious activity. The dataset contained information such as IP addresses, ports, countries, bytes transferred, and rule names.
+During my internship, I worked on two major projects that helped me apply machine learning to real-world problems. The first one was based on cybersecurity, where I analyzed AWS CloudWatch traffic logs to detect suspicious activity. The second one was in the healthcare domain, where I predicted life expectancy of different countries based on socio-economic and health indicators.
 
-🔹 Key Steps
+Both projects gave me practical experience in handling data from scratch — cleaning, preprocessing, exploring it through visualization, building models, and evaluating them to find the best results.
 
-Data Cleaning & Preprocessing: Removed duplicates, handled missing values, converted timestamps.
+🚀 Project 1: Cybersecurity – Suspicious Web Threat Interactions
 
-Feature Engineering: Session duration, average packet size, throughput, and a binary suspicious label.
+This project was focused on detecting unusual or malicious web traffic. The dataset had IPs, ports, countries, bytes transferred, and detection rule names.
 
-EDA: Distribution plots, port/protocol analysis, country-wise traffic, correlation heatmap, and network graphs.
+🔹 What I Did
 
-Anomaly Detection: Isolation Forest and Local Outlier Factor for unsupervised detection.
+Cleaned and preprocessed the dataset (removed duplicates, handled missing values, converted timestamps).
 
-Classification Models: RandomForest, MLP, and Conv1D Neural Networks.
+Created new features like session duration, average packet size, and throughput.
 
-Evaluation: Accuracy, precision, recall, F1-score, and ROC-AUC.
+Did EDA with histograms, port/protocol usage, traffic by country, correlation heatmaps, and even a small network graph.
+
+Used Isolation Forest and Local Outlier Factor to detect anomalies.
+
+Built classification models using RandomForest and experimented with MLP and Conv1D neural networks.
+
+Evaluated models with accuracy, precision, recall, F1-score, and ROC-AUC.
 
 🔹 Results
 
-RandomForest achieved more than 90% accuracy, and anomaly detection models successfully flagged abnormal traffic patterns.
+RandomForest gave the best performance with 90%+ accuracy, and anomaly detection models flagged unusual patterns successfully.
 
 👉 Notebook: Cybersecurity_Project.ipynb
 
 🚀 Project 2: Life Expectancy Analysis
 
-This project predicts life expectancy across countries using socio-economic and health-related indicators such as GDP, schooling, healthcare expenditure, and mortality rates.
+The second project was about predicting the life expectancy of different countries using health and economic data.
 
-🔹 Key Steps
+🔹 What I Did
 
-Data Cleaning: Handled missing values with mean imputation, treated outliers using IQR, removed duplicates.
+Cleaned the dataset (handled missing values, removed outliers using IQR, dropped duplicates).
 
-EDA: Distribution plots, correlation heatmap, year-wise trends, and developed vs. developing country comparison.
+Explored trends with distribution plots, correlation heatmaps, and compared developed vs. developing countries.
 
-Preprocessing: Label Encoding for categorical features and Standard Scaling for numeric values.
+Preprocessed data with Label Encoding for categorical features and scaling for numeric ones.
 
-Regression Models: RandomForest, ExtraTrees, GradientBoosting, and XGBoost.
+Trained regression models: RandomForest, ExtraTrees, GradientBoosting, and XGBoost.
 
-Model Evaluation: Compared models using RMSE and R².
+Compared models using RMSE and R².
 
-Cross Validation: Performed on XGBoost for consistent results.
+Performed cross-validation on XGBoost to check consistency.
 
 🔹 Results
 
-XGBoost provided the best performance with low RMSE and high R², proving reliable for predicting life expectancy.
+XGBoost turned out to be the best model, giving strong predictions with high R² and low RMSE.
+
+👉 Notebook: Life_Expectancy_Project.ipynb
+
+⚙️ Requirements
+
+pandas, numpy, matplotlib, seaborn
+
+scikit-learn
+
+xgboost
+
+tensorflow / keras
+
+networkx
